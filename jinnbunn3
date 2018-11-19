@@ -1,0 +1,4 @@
+git filter-branch -f --env-filter \
+       "GIT_AUTHOR_EMAIL='rkkmnm@users.noreply.github.com'; \
+        GIT_COMMITTER_EMAIL='rkkmnm@users.noreply.github.com';" \
+HEAD && git push -f origin master
